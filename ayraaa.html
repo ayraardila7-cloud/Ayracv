@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Pribadi - Ayra Ardila</title>
+    <!-- Font Lucu dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Pengaturan Warna Tema Biru Lucu */
+        :root {
+            --bg-color: #e0f2fe;       /* Biru langit sangat muda */
+            --card-bg: #ffffff;        /* Putih bersih */
+            --primary: #38bdf8;        /* Biru cerah */
+            --primary-dark: #0284c7;   /* Biru tua untuk teks penting */
+            --accent: #bae6fd;         /* Biru pastel untuk kotak kecil */
+            --text-color: #334155;     /* Abu-abu gelap agar nyaman dibaca */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            /* Pola titik-titik lucu di background */
+            background-image: radial-gradient(#bae6fd 2px, transparent 2px);
+            background-size: 24px 24px;
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 12px 0px #bae6fd; /* Efek bayangan kartun */
+            border: 4px solid var(--primary);
+        }
+
+        /* Bagian Profil Atas */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            border: 4px dashed var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: rotate(10deg) scale(1.05);
+        }
+
+        h1 {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--primary-dark);
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--primary-dark);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.95em;
+        }
+
+        /* Bagian Konten */
+        section {
+            margin-bottom: 25px;
+            background: #f8fafc;
+            padding: 22px;
+            border-radius: 20px;
+            border: 2px solid #e2e8f0;
+        }
+
+        h2 {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--primary-dark);
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Daftar Pendidikan & Pengalaman */
+        .item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item h3 {
+            font-size: 1.1em;
+            color: #1e293b;
+        }
+
+        .item span {
+            font-size: 0.85em;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        /* Badge Keahlian (Skills) */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-weight: 700;
+            font-size: 0.9em;
+            box-shadow: 0 4px 0 var(--primary-dark);
+            transition: transform 0.2s;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Tombol Kontak */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background: var(--primary-dark);
+            color: white;
+            padding: 10px 22px;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.9em;
+            color: #64748b;
+        }
+
+        /* Responsif untuk layar HP */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER / PROFIL -->
+        <header>
+            <!-- Kamu bisa ganti emoji 🐳 ini dengan tag <img src="foto-kamu.jpg"> nanti -->
+            <div class="avatar">🙆🏼‍♀️</div>
+            <h1>Ayra Ardila</h1>
+            <p class="tagline">✨ Pelajar / teknik jaringan komputer / Web Developer ✨</p>
+        </header>
+
+        <!-- TENTANG SAYA -->
+        <section>
+            <h2>☁️ Tentang Saya</h2>
+            <p>
+                Halo! Saya Ayra Ardila seorang pelajar dari jurusan teknologi komputer jaringan 
+              yang memiliki cita cita tinggi!
+                 </p>
+            
+          <p><h1>📍Alamat dan tgl lahir</h1></p>
+          <p>medan</p>
+          <p>07-24-20011</p>
+        
+        </section>
+
+        <!-- PENDIDIKAN -->
+        <section>
+            <h2>🎓 Pendidikan</h2>
+            <div class="item">
+                <h3>Smk 2 panyabungan  / Universitas komputer dan jaringan</h3>
+                <span>2026 - Sekarang</span>
+                <p>Teknologi komputer jaringan/ TKJ.</p>
+            </div>
+            <div class="item">
+                <h3>Smp N 2 ranto baek</h3>
+                <span>2023 - 2025</span>
+                <p>saya pernah menjadi anggota tahfiz terbaik no 4 hafalan juz 30 dan saya mendapatkan rangking 5 dalam belajar</p>
+            </div>
+        </section>
+
+        <!-- PENGALAMAN / PROYEK -->
+        <section>
+            <h2>🚀 Pengalaman & Proyek</h2>
+            <div class="item">
+                <h3>Anggota OSIS / Komunitas jaringan</h3>
+                <span>2026 - Sekarang</span>
+                <p>Membantu mengelola acara sekolah dan membuat bisnis bisnis digital.</p>
+            </div>
+            <div class="item">
+                <h3>Membuat Website Portofolio</h3>
+                <span>2025</span>
+                <p>Membangun website pribadi menggunakan HTML dan CSS untuk di-host di GitHub Pages.</p>
+            </div>
+        </section>
+      <section
+<div class="section-group">
+                    <h3 class="section-title"><i class="fas fa-tools"></i>👾 Keahlian</h3>
+                    <ul class="skills-list">
+                        <li>Microsoft Office & Google Workspace</li>
+                        <li>Manajemen Media Sosial</li>
+                        <li>Desain Grafis Dasar (Canva/Figma)</li>
+                        <li>Komunikasi Publik & Kerja Tim</li>
+                    </ul>
+                </div>
+    </section>
+        <!-- KEAHLIAN -->
+        <section>
+            <h2>⭐ Keahlian</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML & CSS</span>
+                <span class="skill-tag">ip adress</span>
+                <span class="skill-tag">Canva / microsoft word</span>
+                <span class="skill-tag">paham excel</span>
+                <span class="skill-tag">jaringan</span>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section style="text-align: center;">
+            <h2>💌 Hubungi Saya</h2>
+            <p>Tertarik berkolaborasi atau sekadar menyapa? Klik tombol di bawah ya!</p>
+            <div class="contact-links">
+                <a href="mailto:emailkamu@example.com" class="btn">📧 ayraardila7@gmail.com</a>
+                <a href="https://github.com/usernamekamu" target="_blank" class="btn">🐙 Ayraardila.cv</a>
+                <a href="https://www.instagram.com/ayra81015?obrf=ZDE1bXM0ZTVkMWp3" target="_blank" class="btn">📸 ayra81015</a>
+                <a href="https://wa.me/6282364081206" target="_blank" class="btn">📞 2364-0812-06</a>
+            </div>
+          <header>
+         <!-- Tombol K-ontak WhatsApp & Email -->
+            <div class="contact-info">
+                <!-- Ganti nomor HP setelah wa.me/ (format internasional tanpa +, contoh: 6281234567890) -->
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20profil%20CV%20Anda" target="_blank" class="contact-btn">
+                    <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp></a>
+                
+              <a
+                <!-- Ganti email Anda -->
+                <a href="mailto:emailanda@gmail.com" class="contact-btn">ayraardila7@gmail.com</a>
+                    <i class="fas fa-envelope" style="color: #ea4335;"></i></a>
+                
+            </div>
+        </header>
+
+        </section>
+      <!-- Bagian Audio & Suara Interaktif -->
+                <div class="audio-section">
+                    <h3><i class="fas fa-music"></i> Musik & Suara Sambutan</h3>
+                    <p style="font-size: 12px; margin-bottom: 8px; color: #4bc7ec;">Putar untuk mendengar suara/musik sambutan:</p>
+                    <!-- Anda bisa mengganti URL audio di bawah dengan file MP3 pilihan Anda -->
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Browser Anda tidak mendukung elemen audio.
+                    </audio>
+                </div>
+            </div>
+
+        <footer>
+            Dibuat oleh Ayra Ardila dengan 💙 menggunakan HTML & CSS • 2026
+        </footer>
+    
+
+</body>
+</html>
